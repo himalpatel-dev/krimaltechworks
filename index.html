@@ -35,11 +35,17 @@
 
     <main>
         <section id="home" class="hero">
+            <canvas id="particles"></canvas>
+            <div class="hero-visuals" aria-hidden="true">
+                <div class="float-shape s1"></div>
+                <div class="float-shape s2"></div>
+                <div class="float-shape s3"></div>
+            </div>
             <div class="container hero-content reveal">
                 <span class="hero-subtitle">Future-Ready Innovation</span>
                 <h1>Engineering the Digital Future</h1>
-                <p>We partner with visionary enterprises to build scalable, secure, and intelligent technology solutions
-                    that drive business growth.</p>
+                <p>We build high-performance mobile apps and websites that deliver great user experiences and scale with
+                    your business.</p>
                 <div style="display: flex; gap: 1rem;">
                     <a href="#contact" class="btn btn-primary">Start Your Project <i class="fa-solid fa-arrow-right"
                             style="margin-left: 0.5rem;"></i></a>
@@ -52,60 +58,61 @@
             <div class="container">
                 <div class="text-center mb-4 reveal">
                     <span
-                        style="color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem; display: block; margin-bottom: 0.5rem;">Our
-                        Expertise</span>
-                    <h2>Enterprise Solutions</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">End-to-end technology services designed to accelerate
-                        your digital transformation journey.</p>
+                        style="color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem; display: block; margin-bottom: 0.5rem;">What
+                        We Build</span>
+                    <h2>Mobile Application Development</h2>
+                    <p style="max-width: 700px; margin: 0 auto;">End-to-end mobile app development services — native and
+                        cross-platform apps, product design, backend services, and post-launch growth.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card reveal">
                         <div class="service-icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3>Custom Software Development</h3>
-                        <p>Tailored enterprise applications built with scalable architectures. We specialize in
-                            high-performance web and mobile solutions.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-cloud-arrow-up"></i>
-                        </div>
-                        <h3>Cloud Infrastructure</h3>
-                        <p>Secure, scalable, and cost-effective cloud solutions. Expertise in AWS, Azure, and Google
-                            Cloud migration and management.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-shield-virus"></i>
-                        </div>
-                        <h3>Cybersecurity & Compliance</h3>
-                        <p>Comprehensive security audits, penetration testing, and compliance frameworks to protect your
-                            critical digital assets.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-brain"></i>
-                        </div>
-                        <h3>AI & Data Analytics</h3>
-                        <p>Transform raw data into actionable insights. We implement Machine Learning models to automate
-                            and optimize business processes.</p>
-                    </div>
-                    <div class="service-card reveal">
-                        <div class="service-icon">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </div>
-                        <h3>Mobile Strategy</h3>
-                        <p>Native and cross-platform mobile applications that deliver exceptional user experiences on
-                            iOS and Android devices.</p>
+                        <h3>Mobile App Development</h3>
+                        <p>End-to-end mobile product delivery — from concept and architecture to implementation and
+                            launch for iOS and Android.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <h3>Cross-Platform Apps</h3>
+                        <p>High-performance React Native & Flutter apps that deliver native-like experiences with
+                            reduced time-to-market.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <h3>Native iOS Development</h3>
+                        <p>Swift and SwiftUI expertise for polished, performant iOS apps with deep platform integration
+                            and App Store readiness.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+                        <h3>Native Android Development</h3>
+                        <p>Kotlin-first Android apps optimized for fragmentation, performance, and Google Play release
+                            best practices.</p>
                     </div>
                     <div class="service-card reveal">
                         <div class="service-icon">
                             <i class="fa-solid fa-pen-ruler"></i>
                         </div>
-                        <h3>Product Design (UI/UX)</h3>
-                        <p>User-centric design philosophy. We create intuitive interfaces that drive engagement and user
-                            satisfaction.</p>
+                        <h3>Mobile UX & Product Design</h3>
+                        <p>User-first design, rapid prototyping, and usability testing to create intuitive mobile
+                            experiences that boost retention.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3>Backend, APIs & Analytics</h3>
+                        <p>Scalable app backends, real-time APIs, analytics, and performance monitoring to support
+                            growth
+                            and reliability.</p>
                     </div>
                 </div>
             </div>
@@ -115,32 +122,76 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image reveal">
-                        <img src="assets/images/about.png" alt="Krimal Techworks Office">
+                        <img src="assets/images/1.jpg" alt="Krimal Techworks Team">
                     </div>
                     <div class="about-content reveal">
                         <span
-                            style="color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem; display: block; margin-bottom: 0.5rem;">Who
-                            We Are</span>
-                        <h2>Technology Partners You Can Trust</h2>
-                        <p>Krimal Techworks is more than just a development agency. We are a strategic technology
-                            partner dedicated to helping businesses navigate the complexities of the digital age.</p>
-                        <p>With a team of seasoned engineers, architects, and designers, we deliver solutions that are
-                            not only technically sound but also aligned with your long-term business objectives.</p>
+                            style="color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem; display: block; margin-bottom: 0.5rem;">About
+                            Us</span>
+                        <h2>Mobile-First Product Studio</h2>
+                        <p>We design, build, and scale mobile products that people love. Our focus is on delivering
+                            performant, accessible apps that align with business goals and user needs — from discovery
+                            and
+                            prototyping to launch and ongoing growth.</p>
+                        <p>Our team blends product strategy, UX design, and engineering expertise to create reliable,
+                            maintainable mobile systems. We prioritize speed-to-market, measurable outcomes, and
+                            long-term partnerships.</p>
 
                         <div class="stats">
                             <div class="stat-item">
                                 <h4>5+</h4>
-                                <span>Years Experience</span>
+                                <span>Apps Launched</span>
                             </div>
                             <div class="stat-item">
-                                <h4>50+</h4>
-                                <span>Enterprise Clients</span>
+                                <h4>10K+</h4>
+                                <span>Downloads</span>
                             </div>
                             <div class="stat-item">
-                                <h4>100%</h4>
-                                <span>Delivery Rate</span>
+                                <h4>10+</h4>
+                                <span>Websites Delivered</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding"
+            style="background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), rgba(14, 165, 255, 0.02));">
+            <div class="container">
+                <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+                    <div class="about-content reveal">
+                        <span
+                            style="color: var(--secondary-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem; display: block; margin-bottom: 0.5rem;">Our
+                            Approach</span>
+                        <h2>Crafting Digital Experiences That Matter</h2>
+                        <p>We believe in building technology that serves people. Every line of code, every design
+                            decision, and every feature is crafted with the end user in mind. Our agile methodology
+                            ensures rapid iteration while maintaining the highest quality standards.</p>
+                        <p>From initial concept to final deployment, we work closely with our clients to ensure their
+                            vision becomes reality. Our collaborative approach means you're involved at every step, with
+                            transparent communication and regular updates throughout the development process.</p>
+
+                        <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                            <div>
+                                <h4 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 0.5rem;">100%
+                                </h4>
+                                <span
+                                    style="color: var(--text-light); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Client
+                                    Satisfaction</span>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 0.5rem;">24/7
+                                </h4>
+                                <span
+                                    style="color: var(--text-light); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">Support
+                                    Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image reveal">
+                        <img src="assets/images/2.jpg" alt="Krimal Techworks Development Process"
+                            style="width: 100%; border-radius: 1.5rem; box-shadow: var(--shadow-xl);">
                     </div>
                 </div>
             </div>
@@ -157,13 +208,13 @@
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe"
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Rajesh Kumar"
                                     required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Work Email</label>
                                 <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="john@company.com" required>
+                                    placeholder="rajesh@company.com" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -178,10 +229,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>
-                    <div class="contact-info">
-                        <p><i class="fa-solid fa-envelope"></i> contact@krimaltechworks.com</p>
-                        <p><i class="fa-solid fa-location-dot"></i> Innovation Hub, Tech City</p>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -208,20 +256,12 @@
                     <ul>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                        <li><a href="#">Cookie Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                    </ul>
-                </div>
+
             </div>
             <div class="copyright">
-                <p>&copy; 2026 Krimal Techworks. All rights reserved.</p>
+                <p>&copy; 2025 Krimal Techworks. All rights reserved.</p>
             </div>
         </div>
     </footer>
